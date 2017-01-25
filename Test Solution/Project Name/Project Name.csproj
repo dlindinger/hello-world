@@ -1,0 +1,192 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{D19BF99B-6004-49B6-BDA7-E7332333FA06}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Project_Name</RootNamespace>
+    <AssemblyName>Razorleaf Aras Project2</AssemblyName>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Aras.Diagnostics">
+      <HintPath>Aras Refs\Aras.Diagnostics.dll</HintPath>
+    </Reference>
+    <Reference Include="Aras.Net">
+      <HintPath>Aras Refs\Aras.Net.dll</HintPath>
+    </Reference>
+    <Reference Include="Aras.Server.Agent">
+      <HintPath>Aras Refs\Aras.Server.Agent.dll</HintPath>
+    </Reference>
+    <Reference Include="Aras.TDF.Base">
+      <HintPath>Aras Refs\Aras.TDF.Base.dll</HintPath>
+    </Reference>
+    <Reference Include="Aras.Web.Configuration">
+      <HintPath>Aras Refs\Aras.Web.Configuration.dll</HintPath>
+    </Reference>
+    <Reference Include="Aras.Web.Server">
+      <HintPath>Aras Refs\Aras.Web.Server.dll</HintPath>
+    </Reference>
+    <Reference Include="Conversion.Base">
+      <HintPath>Aras Refs\Conversion.Base.dll</HintPath>
+    </Reference>
+    <Reference Include="ConversionManager">
+      <HintPath>Aras Refs\ConversionManager.dll</HintPath>
+    </Reference>
+    <Reference Include="CryptoKey">
+      <HintPath>Aras Refs\CryptoKey.dll</HintPath>
+    </Reference>
+    <Reference Include="FileExchangeService">
+      <HintPath>Aras Refs\FileExchangeService.dll</HintPath>
+    </Reference>
+    <Reference Include="InnovatorCore">
+      <HintPath>Aras Refs\InnovatorCore.dll</HintPath>
+    </Reference>
+    <Reference Include="InnovatorReportServer">
+      <HintPath>Aras Refs\InnovatorReportServer.dll</HintPath>
+    </Reference>
+    <Reference Include="IOM">
+      <HintPath>Aras Refs\IOM.dll</HintPath>
+    </Reference>
+    <Reference Include="Parser">
+      <HintPath>Aras Refs\Parser.dll</HintPath>
+    </Reference>
+    <Reference Include="ReportExecution2005.Proxy">
+      <HintPath>Aras Refs\ReportExecution2005.Proxy.dll</HintPath>
+    </Reference>
+    <Reference Include="SPConnector">
+      <HintPath>Aras Refs\SPConnector.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Abstractions" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.DynamicData.Design" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.Entity.Design" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Web.Extensions.Design" />
+    <Reference Include="System.Web.Routing" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.Windows.Presentation" />
+    <Reference Include="System.WorkflowServices" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="UserNotifications">
+      <HintPath>Aras Refs\UserNotifications.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="Innovator.config">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <None Include="README.md" />
+    <None Include="Templates\ItemTemplates\Visual C#\Razorleaf Aras Client Method.zip" />
+    <None Include="Templates\ItemTemplates\Visual C#\Razorleaf Aras Server Method.zip" />
+    <None Include="Templates\ProjectTemplates\Visual C#\Aras Innovator\11sp5.zip" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Methods - Client\" />
+    <Folder Include="Methods - Server\" />
+    <Folder Include="NewFolder1\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Aras Refs\Aras.Diagnostics.dll" />
+    <Content Include="Aras Refs\Aras.Net.dll" />
+    <Content Include="Aras Refs\Aras.Server.Agent.dll" />
+    <Content Include="Aras Refs\Aras.TDF.Base.dll" />
+    <Content Include="Aras Refs\Aras.Web.Configuration.dll" />
+    <Content Include="Aras Refs\Aras.Web.Server.dll" />
+    <Content Include="Aras Refs\Conversion.Base.dll" />
+    <Content Include="Aras Refs\ConversionManager.dll" />
+    <Content Include="Aras Refs\CryptoKey.dll" />
+    <Content Include="Aras Refs\FileExchangeService.dll" />
+    <Content Include="Aras Refs\InnovatorCore.dll" />
+    <Content Include="Aras Refs\InnovatorReportServer.dll" />
+    <Content Include="Aras Refs\IOM.dll" />
+    <Content Include="Aras Refs\Parser.dll" />
+    <Content Include="Aras Refs\ReportExecution2005.Proxy.dll" />
+    <Content Include="Aras Refs\SPConnector.dll" />
+    <Content Include="Aras Refs\UserNotifications.dll" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
